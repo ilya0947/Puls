@@ -26,6 +26,9 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+    @media ( max-width: 575px ){
+        font-size: 23px;
+    }
 }
 @mixin input{
     color: $input_color;

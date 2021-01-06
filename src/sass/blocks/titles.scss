@@ -1,0 +1,9 @@
+.title{
+    @include title;
+    &_left{
+        color: $white_color;
+        font-size: 36px;
+        line-height: normal;
+        text-align: left;
+    }
+}
