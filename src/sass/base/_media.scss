@@ -1,0 +1,77 @@
+@media ( max-width: 1200px ){
+    .promo{
+        background: url(../../img/bg/bg1.png) 30% center/cover, no-repeat
+    }
+}
+@media ( max-width: 991px ){
+    .promo{
+        padding: 21px 30px;
+
+    }
+}
+@media ( max-width: 767px ){
+    .header{
+        &__logo{
+            width: 180px;
+        }
+        &__official{
+            font-size: 10px;
+            span{
+                font-size: 16px;
+            }
+        }
+        &__phone{
+            font-size: 13px;
+    }
+}
+    .button{
+        &_media-head{
+            width: 120px;
+            font-size: 10px;
+            margin-top: 10px;
+        }
+        
+    }
+}
+@media ( max-width: 575px ){
+    .header{
+        justify-content: space-around;
+        &__logo{
+            width: 140px;
+        }
+        &__phone{
+            display: none;
+        }
+        &__official{
+            font-size: 9px;
+        }
+        span{
+            font-size: 13px;
+            margin-top: 4px;
+        }
+    }
+    .promo{
+        padding: 20px 25px 50px;
+        &__icons{
+            width: 270px;
+    }
+        &__icon{
+            font-size: 11px;
+        }
+        &__header{
+            font-size: 38px;
+        }
+    }
+    .button{
+        &_media-down{
+            width: 250px;
+        }
+    }
+}
+@media ( max-width: 320px ){
+    .button{
+        &_media-head{
+            margin-top: 0;
+        }
+    }
+}

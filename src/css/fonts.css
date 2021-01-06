@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/Museo/MuseoSansCyrl-300.eot');
+    src: local('../fonts/Museo/MuseoSansCyrl-300'),
+        url('../fonts/Museo/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Museo/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/Museo/MuseoSansCyrl-300.woff') format('woff'),
+        url('../fonts/Museo/MuseoSansCyrl-300.ttf') format('truetype'),
+        url('../fonts/Museo/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/Museo/MuseoSansCyrl-500.eot');
+    src: local('../fonts/Museo/MuseoSansCyrl-500'),
+        url('../fonts/Museo/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Museo/MuseoSansCyrl-500.woff2') format('woff2'),
+        url('../fonts/Museo/MuseoSansCyrl-500.svg#MuseoSansCyrl-500') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/Museo/MuseoSansCyrl-700.eot');
+    src: local('../fonts/Museo/MuseoSansCyrl-700'),
+        url('../fonts/Museo/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Museo/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/Museo/MuseoSansCyrl-700.woff') format('woff'),
+        url('../fonts/Museo/MuseoSansCyrl-700.ttf') format('truetype'),
+        url('../fonts/Museo/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
