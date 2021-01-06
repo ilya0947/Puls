@@ -3,6 +3,7 @@
 @import 'base/mixin';
 
 *{
+    box-sizing: border-box;
     font-family: 'Museo'
 }
 .container{
@@ -12,4 +13,5 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
+@import 'blocks/advant';
 @import 'base/media';

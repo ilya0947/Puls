@@ -8,6 +8,16 @@
         padding: 21px 30px;
 
     }
+    .advant{
+        padding-bottom: 40px;
+        &__wrapper{
+            margin-top: 40px;
+            justify-content: center;
+        }
+        &__icons{
+            margin: 25px;
+        }
+    }
 }
 @media ( max-width: 767px ){
     .header{
@@ -65,6 +75,11 @@
     .button{
         &_media-down{
             width: 250px;
+        }
+    }
+    .advant{
+        &__header{
+            font-size: 25px;
         }
     }
 }

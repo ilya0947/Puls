@@ -25,6 +25,7 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
 }
 @mixin input{
     color: $input_color;
