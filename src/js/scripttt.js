@@ -3,25 +3,9 @@ const slider = tns({
     items: 1,
     slideBy: 'page',
     autoplay: false,
-    adaptiveHeight: true,
     controls:false,
-    nav: false,
-    responsive: {
-      640: {
-        edgePadding: 20,
-        gutter: 20,
-        items: 1
-        },
-        700: {
-          gutter: 30
-        },
-        900: {
-          items: 1
-        }
-      }
+    nav: true,
   });
-  
-  
   document.querySelector('.slick-prev').addEventListener('click', function () {
     slider.goTo('prev');
   });
