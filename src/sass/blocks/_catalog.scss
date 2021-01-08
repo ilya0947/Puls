@@ -1,0 +1,163 @@
+.catalog{
+    padding-bottom: 103px;
+    &__content{
+        margin-top: 39px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        display: none;
+        &_active{
+            display: flex;
+        }
+    }
+    &__tabs{
+        margin: 70px 0 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        @media ( max-width: 575px ){
+           flex-wrap: wrap;
+           margin-top: 35px;
+        }
+    }
+    &__tab{
+        width: 220px;
+        height: 50px;
+        border: 2px solid $catalog_border_color;
+        @include tab_title;
+        transform: skewX(-25deg);
+        cursor: pointer;
+        margin: 0 5px;
+        transition: 500ms all;
+        @media ( max-width: 767px ){
+            width: 170px;
+            height: 45px;
+            font-size: 15px;
+            line-height: 42px;
+        }
+        @media ( max-width: 575px ){
+            width: 130px;
+            height: 37px;
+            font-size: 13px;
+            line-height: 35px;
+            margin: 5px;
+        }
+        &:hover{
+            box-shadow: 3px 3px 20px $main_color;
+            border: none;
+        }
+        div{
+            transform: skewX(25deg);
+        }
+        &_active{
+            background-color: $main_color;
+            color: $white_color;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    &-item{
+        width: 300px;
+        margin: 20px 8px 0;
+        min-height: 440px;
+        border: 2px solid $tab_border_color;
+        background-color: $white_color;
+        padding: 20px 20px 26px;
+        overflow: hidden;
+        &__img{
+            max-width: 100%;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        &__subtitle{
+            @include tab_price_title;
+        }
+        &__descr{
+            @include tab_price_text;
+        }
+        &__link{
+            @include tab_price_md;
+            &:hover{
+                color: $main_color;
+            }
+        }
+        &__back{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 11px));
+            @include tab_price_md;
+            &:hover{
+                color: $main_color;
+            }
+        } 
+        hr{
+            background-color: $tab_border_color;
+            margin: 19px 0 21px;
+            border-bottom: none;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__price{
+            @include tab_price;
+        }
+        &__old-price{
+            @include tab_old_price;
+        }
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content{
+            width: 50%;
+            margin-right: 0;
+            padding-right: 20px;
+            transform: translateX(-100%);
+            transition: 600ms all;
+            &_active{
+                transform: translateX(0%);
+                margin-right: 20px;
+                padding-right: 0;
+            }
+        }
+        &__list{
+            width: 50%;
+            margin: 0 0 0 20px;
+            position: relative;
+            transform: translateX(0%);
+            padding:  0 0 0 19px;
+            transition: 600ms all;
+            &_active{
+                transform: translateX(-100%);
+                margin-left: 0;
+                padding:  0 20px 0 18px;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                li{
+                    @include tab_price_descr;
+                    margin-bottom: 20px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        left: -14px;
+                        top: 7px;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main_color
+                    }
+                }
+            }
+        }
+    }
+}
