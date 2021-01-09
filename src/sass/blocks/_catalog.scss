@@ -29,6 +29,7 @@
         @include tab_title;
         transform: skewX(-25deg);
         cursor: pointer;
+        border-radius: 3px;
         margin: 0 5px;
         transition: 500ms all;
         @media ( max-width: 767px ){
@@ -65,6 +66,7 @@
         border: 2px solid $tab_border_color;
         background-color: $white_color;
         padding: 20px 20px 26px;
+        border-radius: 10px;
         overflow: hidden;
         &__img{
             max-width: 100%;

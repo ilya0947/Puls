@@ -10,6 +10,10 @@
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
+    transition: 400ms all;
+    &:hover{
+        box-shadow:  0px 0px 10px 6px $white_color;
+    }
     &_main{
         margin-top: 67px;
         width: 300px;
@@ -22,6 +26,9 @@
         font-size: 16px;
     }
     &_mini{
-       @include tab_price_btn
+       @include tab_price_btn;
+       &:hover{
+           box-shadow:  0px 0px 20px 0px $main_color;
+       }
     }
 }
