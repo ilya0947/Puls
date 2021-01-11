@@ -166,7 +166,7 @@
         }
     }
     .overlay{
-        .modal{
+        .modal#consultation, .modal#order{
             width: 250px;
             padding: 20px;
             min-height: 300px;
@@ -190,7 +190,7 @@
 }
 @media ( max-width: 390px ){
     .overlay{
-        .modal{
+        .modal#consultation, .modal#order{
             width: 200px;
             padding: 10px;
             min-height: 270px;

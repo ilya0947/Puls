@@ -1,6 +1,10 @@
 .footer{
     position: relative;
     min-height: 630px;
+    iframe{
+        height: 630px;
+        width: 100%;
+    }
     &-info{
         max-width: 460px;
         position: absolute;

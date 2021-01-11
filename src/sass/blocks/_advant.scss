@@ -16,6 +16,9 @@
         align-items: center;
         justify-content: center;
     }
+    &__icon2{
+        animation: heartdeat 1s cubic-bezier(1, 0.75, 0, 0.26) infinite;
+    }
     &__title{
         color: $blakc_color;
         font-size: 18px;

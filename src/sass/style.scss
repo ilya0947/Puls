@@ -1,6 +1,7 @@
 
 @import 'base/variables';
 @import 'base/mixin';
+@import 'base/animation';
 
 *{
     box-sizing: border-box;
@@ -23,4 +24,5 @@
 @import 'blocks/reviews';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 @import 'base/media';
