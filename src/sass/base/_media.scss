@@ -166,7 +166,7 @@
         }
     }
     .overlay{
-        .modal#consultation, .modal#order{
+        .modal{
             width: 250px;
             padding: 20px;
             min-height: 300px;
@@ -185,12 +185,15 @@
                     font-size: 13px;
                 }
             }
+            &_mini{
+                min-height: 80px;
+            }
         }
     }
 }
 @media ( max-width: 390px ){
     .overlay{
-        .modal#consultation, .modal#order{
+        .modal{
             width: 200px;
             padding: 10px;
             min-height: 270px;
@@ -210,6 +213,9 @@
                     font-size: 12px;
                     line-height: 15px;
                 }
+            }
+            &_mini{
+                min-height: 80px;
             }
         }
     }    
